@@ -18,6 +18,16 @@ or
 curl -sL https://raw.githubusercontent.com/skunxicat/cloudless-infra/main/bootstrap | bash -s my-project infra
 ```
 
+```bash
+
+export PATH="$(pwd):$PATH"
+tf init 
+tf apply --auto-approve
+
+tf output -json env | jq 
+
+```
+
 ## Manual Setup 
 
 ```
@@ -32,7 +42,7 @@ cp .env.example .env
 
 ```
 # add . to the $PATH
-export PATH="$(realpath .):$PATH"
+export PATH="$(pwd):$PATH"
 
 # check tf is in the $PATH
 which tf
