@@ -8,14 +8,14 @@ Provides consistent labeling, naming conventions, and environment context for al
 
 ```bash
 # Bootstrap into existing project
-curl -sL https://raw.githubusercontent.com/skunxicat/cloudless-infra/main/bootstrap | bash
+curl -sL https://raw.githubusercontent.com/ql4b/cloudless-infra/main/bootstrap | bash
 ```
 
 or 
 
 ```
 # specify project name and directory
-curl -sL https://raw.githubusercontent.com/skunxicat/cloudless-infra/main/bootstrap | bash -s my-project infra
+curl -sL https://raw.githubusercontent.com/ql4b/cloudless-infra/main/bootstrap | bash -s my-project infra
 ```
 
 ```bash
